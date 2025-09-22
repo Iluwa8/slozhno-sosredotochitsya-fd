@@ -1,5 +1,175 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+/*
+________________________________________________________________________________
+
+
+Header section
+
+________________________________________________________________________________
+*/
+
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-image: var(--background-image-main);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgb(0 15 48);
+  max-width: 375px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.header {
+  display: grid;
+  height: 100vh;
+  min-height: 668px;
+  grid-template-columns: auto;
+}
+
+.header__theme-menu {
+  justify-self: end;
+}
+
+.header__theme-menu-item {
+  list-style: none;
+  border: none;
+  gap: 10px;
+  font-family: var(--main-font-family);
+  font-size: var(--main-font-size-section-head);
+  font-weight: var(--main-font-weight-text);
+  line-height: 100%;
+  color: var(--main-background-color-article-subhead);
+}
+
+.header__theme-menu-button {
+  padding-inline: 13px;
+  background-color: transparent;
+  border: none;
+}
+
+.title {
+  justify-self: center;
+  max-block-size: 192px;
+  font-family: var(--main-font-family), sans-serif;
+  font-size: var(--main-font-size-header-title);
+  line-height: var(--main-font-line-height);
+  font-weight: var(--main-font-weight);
+  color: var(--main-theader-section-title-txt-color);
+  text-shadow: 2px 2px 0 #FF0070;
+  text-justify: center;
+}
+
+.header__text {
+  --main-font-line-height: 23.4px;
+
+  font-family: var(--main-font-family), sans-serif;
+  font-size: var(--main-font-size-section-head);
+  font-weight: var(--main-font-weight);
+  line-height: var(--main-font-line-height);
+  color: var(--main-text-color-article-subhead);
+  background-color: var(--main-text-color-article-head);
+  block-size: fit-content;
+  inline-size: inherit;
+  /* margin-inline-start: 10px; */
+}
+
+
+
+
+/*
+________________________________________________________________________________
+
+
+main section
+
+________________________________________________________________________________
+*/
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  inline-size: 375px;
+  font-family: var(--main-font-family), sans-serif;
+  font-size: var(--main-font-size);
+  font-weight: var(--main-font-weight);
+  text-wrap: wrap;
+}
+
+/*
+________________________________________________________________________________
+
+
+main section sections
+
+________________________________________________________________________________
+*/
+
+.main__section-head {
+  inline-size: 375px;
+  color: var(--main-text-color-article-head);
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  margin-bottom: 20px;
+}
+
+.main__section-subhead {
+  inline-size: calc(375px - 20px);
+  background-color: var(--main-background-color-article-subhead);
+  color: var(--main-text-color-article-subhead);
+  margin-bottom: 10px;
+}
+
+.main__section-text {
+  font-family: inherit;
+  font-weight: var(--main-font-weight-text);
+  margin-bottom: 20px;
+  inline-size: calc(375px - 20px);
+}
+
+.main__section-text-span {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: var(--main-text-span-color);
+  text-shadow: 2px 2px 0 var(--main-text-span-shadow);
+}
+
+/*
+________________________________________________________________________________
+
+
+main section picture section
+
+________________________________________________________________________________
+*/
+
+.main__section-in-pictures {
+  display: grid;
+  grid-template-columns: 375px;
+  gap: 10px;
+}
+
+.main__section-image {
+  inline-size: 354.999px;
+}
+
+/*
+________________________________________________________________________________
+
+
+footer section
+
+________________________________________________________________________________
+*/
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  block-size: 667px;
+  padding: 0;
 }
