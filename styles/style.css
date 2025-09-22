@@ -64,11 +64,8 @@ ________________________________________________________________________________
 
 .title {
   justify-self: center;
-  /* max-block-size: 192px; */
-  /* padding-top: 100px; */
   font-family: var(--main-font-family), sans-serif;
   font-size: var(--main-font-size-header-title);
-  /* line-height: var(--main-font-line-height); */
   font-weight: var(--main-font-weight);
   color: var(--main-theader-section-title-txt-color);
   text-shadow: 4px 4px 0 #FF0070;
@@ -78,7 +75,6 @@ ________________________________________________________________________________
 .header-title {
   padding-top: 100px;
   line-height: 100px;
-  /* margin-bottom: 40px; */
 }
 
 
@@ -134,22 +130,33 @@ ________________________________________________________________________________
   font-family: inherit;
   font-weight: inherit;
   font-size: inherit;
-  margin-bottom: 20px;
+}
+
+.main__section-head:not(:first-child, :last-child) {
+  padding-top: 50px;
+}
+
+.main__section-article {
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .main__section-subhead {
   inline-size: calc(375px - 20px);
   background-color: var(--main-background-color-article-subhead);
   color: var(--main-text-color-article-subhead);
-  margin-bottom: 10px;
+  font-family: inherit;
+  font-size: var(--main-font-size);
+  
 }
 
 .main__section-text {
   font-family: inherit;
   font-weight: var(--main-font-weight-text);
-  margin-bottom: 20px;
+  line-height: 23.4px;
   inline-size: calc(375px - 20px);
 }
+
 
 .main__section-text-link {
   font-family: inherit;
