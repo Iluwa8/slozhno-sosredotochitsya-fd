@@ -1,6 +1,17 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+.page {
+  background-image: var(--main-theme-bg-image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: var(--main-gb-color);
+  max-inline-size: 375px;
+}
+
 /*
+
 ________________________________________________________________________________
 
 
@@ -8,92 +19,80 @@ Header section
 
 ________________________________________________________________________________
 */
+.header {
+  --main-text-color: #FF0070;
+  --main-font-size: 18px;
+  --main-font-style: normal;
+  --main-font-weight: 400;
+  --main-line-height: 18px;
 
-.page {
-  background-image: var(--background-image-main);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-color: rgb(0 15 48);
-  max-width: 375px;
-  padding-inline-start: 10px;
-  padding-inline-end: 10px;
-  justify-content: center;
-  text-wrap: wrap;
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
+  block-size: 100vh;
+  max-block-size: 668px;
+  display: grid;
+  grid-template-columns: 375px;
+  font-family: var(--main-font-family), sans-serif;
+  color: var(--main-text-color);
+  font-size: var(--main-font-size);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
+  line-height: var(--main-line-height);
 }
 
-.header {
-  display: grid;
-  max-height: 100vh;
-  min-height: 668px;
-  grid-template-columns: auto;
-  margin-bottom: 40px;
+.header__span {
+  --main-line-height: 25px;
+
+  justify-self: end;
+  padding-block-start: 10px;
+  padding-inline-end: 28px;
+  line-height: var(--main-line-height);
 }
 
 .header__theme-menu {
-  display: grid;
-  grid-template-columns: auto;
-  gap: 50px;
-  inline-size: 70px;
-  block-size: 98px;
-  justify-self: end;
-  padding-top: 75px;
-}
-
-.header__theme-menu-item {
-  list-style: none;
-  border: none;
-  gap: 10px;
-  font-family: var(--main-font-family);
-  font-size: var(--main-font-size-section-head);
-  font-weight: var(--main-font-weight-text);
-  line-height: 100%;
-  color: var(--main-background-color-article-subhead);
-}
-
-.header__theme-menu-item:not(:last-child) {
-  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-inline-end: 9px;
 }
 
 .header__theme-menu-button {
-  padding-inline: 13px;
-  background-color: transparent;
   border: none;
+  background-color: transparent;
 }
 
 .title {
-  justify-self: center;
-  font-family: var(--main-font-family), sans-serif;
-  font-size: var(--main-font-size-header-title);
+  --main-font-size: 116px;
+  --main-font-weight: 700;
+  --main-line-height: 95.7px;
+  --main-text-color: #DB00FF;
+
+  font-size: var(--main-font-size);
   font-weight: var(--main-font-weight);
-  color: var(--main-theader-section-title-txt-color);
-  text-shadow: 4px 4px 0 #FF0070;
-  text-justify: center;
+  line-height: var(--main-line-height);
+  color: var(--main-text-color);
+  text-shadow: var(--main-text-shadow);
 }
 
 .header-title {
-  padding-top: 100px;
-  line-height: 100px;
+  padding-block-start: 60px;
 }
-
 
 .header__text {
-  --main-font-line-height: 23.4px;
+  --main-text-color: #000028;
+  --main-line-height: 130%;
+  --main-font-weight: 700;
 
-  font-family: var(--main-font-family), sans-serif;
-  font-size: var(--main-font-size-section-head);
+  line-height: var(--main-line-height);
   font-weight: var(--main-font-weight);
-  line-height: var(--main-font-line-height);
-  color: var(--main-text-color-article-subhead);
-  background-color: var(--main-text-color-article-head);
-  block-size: fit-content;
-  inline-size: inherit;
-  margin-bottom: 45px;
+  color: var(--main-text-color);
+  background-color: #FF0070;
+  max-block-size: 117px;
+  max-inline-size: 355px;
+  margin-block-end: 20px;
+  /* margin-inline: 10px; */
+  margin-block-start: 15px;
 }
-
-
-
 
 /*
 ________________________________________________________________________________
@@ -103,16 +102,23 @@ main section
 
 ________________________________________________________________________________
 */
-
 .main {
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  inline-size: 375px;
-  font-family: var(--main-font-family), sans-serif;
+  --main-text-color: #F1B2CE;
+  --main-font-size: 18px;
+  --main-font-style: normal;
+  --main-font-weight: 400;
+  --main-line-height: 23.4px;
+
+  display: grid;
+  grid-template-columns: 375px;
+  align-self: center;
+  gap: 40px;
+  font-family: var(--main-font-family);
   font-size: var(--main-font-size);
+  font-style: var(--main-font-style);
   font-weight: var(--main-font-weight);
-  text-wrap: wrap;
+  line-height: var(--main-line-height);
+  color: var(--main-text-color);
 }
 
 /*
@@ -123,50 +129,72 @@ main section sections
 
 ________________________________________________________________________________
 */
-
 .main__section-head {
-  inline-size: 375px;
-  color: var(--main-text-color-article-head);
-  font-family: inherit;
-  font-weight: inherit;
-  font-size: inherit;
-}
+  --main-text-color: #FF0070;
+  --main-font-size: 18px;
+  --main-font-weight: 700;
 
-.main__section-head:not(:first-child, :last-child) {
-  padding-top: 50px;
-}
-
-.main__section-article {
-  margin-top: 20px;
-  margin-bottom: 50px;
+  font-size: var(--main-font-size);
+  font-weight: var(--main-font-weight);
+  color: var(--main-text-color);
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+  padding-block-end: 20px;
 }
 
 .main__section-subhead {
-  inline-size: calc(375px - 20px);
-  background-color: var(--main-background-color-article-subhead);
-  color: var(--main-text-color-article-subhead);
-  font-family: inherit;
+  --main-text-color: #000028;
+  --main-font-size: 18px;
+  --main-font-weight: 700;
+
   font-size: var(--main-font-size);
-  
+  font-weight: var(--main-font-weight);
+  color: var(--main-text-color);
+  background-color: #FF0070;
+  margin-inline: 10px;
+  margin-block-end: 10px;
+}
+
+.main__section-subhead-middle {
+  margin-block: 10px;
+}
+
+.main__section-low-move {
+  padding-block-start: 40px;
+}
+
+.main__section-text-low-move {
+  padding-inline: 10px;
+  margin-block-end: 20px;
+}
+
+.main__section-text-padding-low {
+  padding-block-end: 10px;
+  padding-inline: 10px;
 }
 
 .main__section-text {
-  font-family: inherit;
-  font-weight: var(--main-font-weight-text);
-  line-height: 23.4px;
-  inline-size: calc(375px - 20px);
+  padding-inline: 10px;
+  padding-block-start: 10px;
+  padding-block-end: 10px;
 }
 
-
-.main__section-text-link {
-  font-family: inherit;
-  font-weight: inherit;
-  font-size: inherit;
-  color: var(--main-text-span-color);
-  text-shadow: 2px 2px 0 var(--main-text-span-shadow);
-  text-decoration: none;
+.main__section-move-hard {
+  /* margin-block-start: 100px; */
 }
 
+.main__section-subMainHead {
+  --main-text-color: #000028;
+  --main-font-size: 18px;
+  --main-font-weight: 700;
+
+  font-size: var(--main-font-size);
+  font-weight: var(--main-font-weight);
+  color: var(--main-text-color);
+  background-color: #FF0070;
+  margin-inline: 10px;
+  margin-block-end: 20px;
+}
 /*
 ________________________________________________________________________________
 
@@ -175,16 +203,17 @@ main section picture section
 
 ________________________________________________________________________________
 */
-
 .main__section-in-pictures {
   display: grid;
-  grid-template-columns: 375px;
   gap: 10px;
+  padding-block-start: 16px;
 }
 
 .main__section-image {
-  inline-size: 354.999px;
+  max-inline-size: 355px;
+  justify-self: center;
 }
+
 
 /*
 ________________________________________________________________________________
@@ -196,9 +225,24 @@ ________________________________________________________________________________
 */
 
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  block-size: 667px;
-  padding: 0;
+  display: grid;
+  min-block-size: 667px;
+  justify-self: center;
+}
+
+.footer__title {
+  --main-text-color: #DB00FF;
+  --main-font-size: 116px;
+  --main-font-style: bold;
+  --main-font-weight: 700;
+  --main-line-height: 95.7px;
+  --main-text-shadow: 2px 2px 0 #FF0070;
+
+  font-family: var(--main-font-family), sans-serif;
+  font-size: var(--main-font-size);
+  font-weight: var(--main-font-weight);
+  font-style: var(--main-font-style);
+  color: var(--main-text-color);
+  text-shadow: var(--main-text-shadow);
+  padding-block-start: 286px;
 }
