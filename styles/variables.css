@@ -2,31 +2,23 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
-/* :root {
-  --background-image-main: url(../images/cover-image-dark.png);
-  --main-font-family: 'IBM Plex Mono';
-  --main-font-line-height: 82,5%;
-  --main-font-weight-text: 400;
-  --main-font-weight: 700;
-  --main-font-size-header-title: 116px;
-  --main-font-size: 18px;
-  --main-background-color-article-subhead: rgb(253 17 101);
-  --main-text-color-article-subhead: rgba(0, 0, 40, 1);
-  --main-text-color-article-head: rgba(255, 0, 112, 1);
-  --main-theader-section-title-txt-color: rgba(219, 0, 255, 1);
-  --main-text-span-color: rgba(241, 178, 206, 1);
-  --main-text-span-shadow: rgba(255, 0, 112, 1);
-} */
 
 :root {
-  --main-theme-bg-image: url(../images/cover-image-dark.png);
-  --main-bg-color: rgb(0 15 48);
-  --main-font-family: "IBM Plex Mono";
-  --main-font-size: 116px;
-  --main-font-style: normal;
-  --main-font-weight: 700;
-  --main-line-height: 95.7px;
-  --main-text-color: rgba(219, 0, 255, 1);
-  --main-text-shadow: 4px 4px 0 #FF0070;
-  --main-head-bg-color: #FF0070;
+  --main-bg-image: url(../images/cover-image-dark.png);
+  --main-page-padding: 10px;
+  --main-margin-block: 40px;
+  --main-section-margin: 50px;
+  --main-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --main-title-line-height: clamp(5.98125rem, 5.7844rem + 0.8397vw, 6.1875rem);
+  --main-font-size: 1.125rem;
+  --main-line-height: 23.4px;
+  --main-font-family: "IBM Plex mono";
+  --section-title-color: rgb(255 0 112);
+  --main-accent-color: rgb(255 0 112);
+  --hover-border-color: rgb(255 0 112 / 0.4);
+  --main-title-color: #db00ff;
+  --main-font-color: #f1b2ce;
+  --main-decor-color: rgb(255 0 112);
+  --main-button-color: rgb(255 0 112);
+  --main-bg-color: #000028;
 }
