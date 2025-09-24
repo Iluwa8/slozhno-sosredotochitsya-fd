@@ -11,9 +11,10 @@
   --hover-border-color: rgba(50 49 45/ 0.4);
   --main-title-color: #ffc2e6;
   --main-font-color: #353430;
-  --main-decor-color: #353430;
+  --main-decor-color: #ff8dcb;
   --main-button-color: #353430;
   --main-bg-color: #fff1f7;
+  --section-title-bg-color: #ff8dcb;
 }
 
 @media (prefers-color-scheme: light) {
@@ -27,6 +28,7 @@
     --main-decor-color: #353430;
     --main-button-color: #353430;
     --main-bg-color: #fff1f7;
+    --section-title-bg-color: #ff8dcb;
   }
 
   .header__decorations {

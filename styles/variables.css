@@ -21,4 +21,16 @@
   --main-decor-color: rgb(255 0 112);
   --main-button-color: rgb(255 0 112);
   --main-bg-color: #000028;
+  --section-title-bg-color: rgb(255 0 112);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --main-page-padding: 20px;
+    --main-margin-block: 60px;
+    --main-section-margin: 80px;
+    --main-title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --main-title-line-height: clamp(6.1875rem, 0.4631rem + 11.9258vw, 8.095625rem);
+  }
+
 }
