@@ -41,7 +41,7 @@ ________________________________________________________________________________
   box-shadow: 0 0 4px 2px var(--main-accent-color);
 }
 
-.header__decorations::before {
+/* .header__decorations::before {
   content: '';
   position: absolute;
   bottom: var(--main-page-padding);
@@ -53,17 +53,17 @@ ________________________________________________________________________________
   block-size: 9px;
   border-block-end: 1px var(--main-decor-color) solid;
   border-inline-start: 1px var(--main-decor-color) solid;
-}
+} */
 
 .decorated-zone::before {
   content: '';
   position: absolute;
+  left: var(--main-page-padding);
   block-size: 25px;
   inline-size: 25px;
-  top: var(--main-page-padding);
-  right: var(--main-page-padding);
-  border-inline-end: 1px var(--main-decor-color) solid;
-  border-block-start: 1px var(--main-decor-color) solid;
+  bottom: var(--main-page-padding);
+  border-inline-start: 1px var(--main-decor-color) solid;
+  border-block-end: 1px var(--main-decor-color) solid;
 }
 
 .decorated-zone::after {
@@ -76,6 +76,9 @@ ________________________________________________________________________________
   border-inline-end: 1px var(--main-decor-color) solid;
   border-block-start: 1px var(--main-decor-color) solid;
 }
+
+
+
 /*
 
 ________________________________________________________________________________
