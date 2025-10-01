@@ -17,6 +17,10 @@
   --section-title-bg-color: #ff8dcb;
 }
 
+  .theme-light .header__decorations {
+    display: none;
+  }
+
 @media (prefers-color-scheme: light) {
   :root {
     --main-bg-image: url(../images/cover-image-light.png);
@@ -32,10 +36,6 @@
   }
 
   .header__decorations {
-    display: none;
-  }
-
-  .theme-light .header__decorations {
     display: none;
   }
 }
