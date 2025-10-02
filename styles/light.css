@@ -12,12 +12,13 @@
   --hover-border-color: rgba(50 49 45/ 0.4);
   --main-title-color: #ffc2e6;
   --main-font-color: #353430;
-  --main-decor-color: #ff8dcb;
+  --main-decor-color: rgb(254 131 194);
   --main-button-color: #353430;
-  --main-bg-color: #fff1f7;
+  --main-bg-color: rgb(255 235 244);
   --section-title-bg-color: #ff8dcb;
   --section-subhead-bg-color: #ff8dcb;
   --sub-subhead-bg-color: #ff8dcb;
+  --header-decor-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -28,12 +29,13 @@
     --hover-border-color: rgba(50 49 45/ 0.4);
     --main-title-color: #ffc2e6;
     --main-font-color: #353430;
-    --main-decor-color: #353430;
+    --main-decor-color: rgb(254 131 194);
     --main-button-color: #353430;
     --main-bg-color: #fff1f7;
     --section-title-color: #ff8dcb;
     --section-subhead-bg-color: #ff8dcb;
     --sub-subhead-bg-color: #ff8dcb;
+    --header-decor-color: #353430;
   }
 
   .header__decorations {

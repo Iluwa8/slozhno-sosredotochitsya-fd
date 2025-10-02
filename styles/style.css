@@ -21,7 +21,7 @@ ________________________________________________________________________________
 */
 
 .header__decorations {
-  display: none;
+  display: block;
   position: absolute;
   color: var(--main-accent-color);
   text-transform: uppercase;
@@ -50,8 +50,8 @@ ________________________________________________________________________________
   block-size: 25px;
   inline-size: 25px;
   bottom: var(--main-page-padding);
-  border-inline-start: 1px var(--main-decor-color) solid;
-  border-block-end: 1px var(--main-decor-color) solid;
+  border-inline-start: 1px var(--header-decor-color) solid;
+  border-block-end: 1px var(--header-decor-color) solid;
 }
 
 .decorated-zone::after {
@@ -61,8 +61,8 @@ ________________________________________________________________________________
   inline-size: 25px;
   top: var(--main-page-padding);
   right: var(--main-page-padding);
-  border-inline-end: 1px var(--main-decor-color) solid;
-  border-block-start: 1px var(--main-decor-color) solid;
+  border-inline-end: 1px var(--header-decor-color) solid;
+  border-block-start: 1px var(--header-decor-color) solid;
 }
 
 
@@ -204,10 +204,6 @@ ________________________________________________________________________________
   margin-block-end: 20px;
 }
 
-.main__section-images-container {
-  margin-block-start: 50px;
-}
-
 .main__section-subhead {
   --main-font-color: #000028;
   
@@ -234,7 +230,7 @@ ________________________________________________________________________________
 */
 
 .main__section-text-link:hover {
-  border-bottom: 1px var(--main-button-color) solid;
+  border-bottom: 1px var(--main-hover-color) solid;
 }
 
 .main__section-text-link:focus {
@@ -242,7 +238,7 @@ ________________________________________________________________________________
 }
 
 .main__section-text-link:focus-visible {
-  outline: 1px var(--main-button-color) solid;
+  outline: 1px var(--main-hover-color) solid;
 }
 
 .main__section-text:not(:last-child) {
@@ -279,7 +275,6 @@ ________________________________________________________________________________
 .main__section-in-pictures-subhead {
   --main-font-color: #000028;
 
-  margin-block-end: -40px;
   font-size: var(--main-font-size);
   background-color: var(--main-decor-color);
   color: var(--main-font-color);
@@ -287,6 +282,7 @@ ________________________________________________________________________________
 
 .main__section-images-container {
   display: grid;
+  margin-block-start: 10px;
   grid-template-columns: 1fr;
   gap: 10px;
 }
@@ -342,7 +338,7 @@ ________________________________________________________________________________
   }
 
   .main__section-sub-subhead {
-    block-size: 23px;
+    block-size: fit-content;
   }
 
   .main__section-article-list {
@@ -394,12 +390,16 @@ ________________________________________________________________________________
   }
 
   .main__section-head {
-    width: 315px;
+    min-width: 315px;
   }
 
   .main__section:nth-child(even) .main__section-article-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+  }
+
+  .main__section-images-container {
+    margin-block-start: 20px;
   }
 }

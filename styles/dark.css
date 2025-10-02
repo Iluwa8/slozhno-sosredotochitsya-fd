@@ -19,13 +19,6 @@
   --sub-subhead-bg-color: rgb(255 0 112);
 }
 
-@media (prefers-color-scheme: dark) {
-  
-  .header__decorations {
-    display: block;
-  }
-}
-
 .theme-dark .header__decorations {
   display: block;
 }

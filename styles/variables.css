@@ -24,6 +24,8 @@
   --section-title-bg-color: rgb(255 0 112);
   --section-subhead-bg-color: rgb(255 0 112);
   --sub-subhead-bg-color: rgb(255 0 112);
+  --main-hover-color: rgba(241, 178, 206, 1);
+  --header-decor-color: rgb(253 17 101);
 }
 
 @media (min-width: 768px) {
