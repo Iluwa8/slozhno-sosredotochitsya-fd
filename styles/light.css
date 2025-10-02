@@ -4,6 +4,7 @@
   переключая тему
 */
 
+
 :root.theme-light {
   --main-bg-image: url(../images/cover-image-light.png);
   --section-title-color: #353430;
@@ -15,16 +16,14 @@
   --main-button-color: #353430;
   --main-bg-color: #fff1f7;
   --section-title-bg-color: #ff8dcb;
+  --section-subhead-bg-color: #ff8dcb;
+  --sub-subhead-bg-color: #ff8dcb;
 }
 
-  .theme-light .header__decorations {
-    display: none;
-  }
-
 @media (prefers-color-scheme: light) {
+  
   :root {
     --main-bg-image: url(../images/cover-image-light.png);
-    --section-title-color: #353430;
     --main-accent-color: #ff8dcb;
     --hover-border-color: rgba(50 49 45/ 0.4);
     --main-title-color: #ffc2e6;
@@ -32,10 +31,16 @@
     --main-decor-color: #353430;
     --main-button-color: #353430;
     --main-bg-color: #fff1f7;
-    --section-title-bg-color: #ff8dcb;
+    --section-title-color: #ff8dcb;
+    --section-subhead-bg-color: #ff8dcb;
+    --sub-subhead-bg-color: #ff8dcb;
   }
 
   .header__decorations {
     display: none;
   }
+}
+
+.theme-light .header__decorations {
+  display: none;
 }

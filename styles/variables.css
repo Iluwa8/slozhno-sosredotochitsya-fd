@@ -22,6 +22,8 @@
   --main-button-color: rgb(255 0 112);
   --main-bg-color: #000028;
   --section-title-bg-color: rgb(255 0 112);
+  --section-subhead-bg-color: rgb(255 0 112);
+  --sub-subhead-bg-color: rgb(255 0 112);
 }
 
 @media (min-width: 768px) {
