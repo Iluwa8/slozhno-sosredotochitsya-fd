@@ -23,7 +23,7 @@ ________________________________________________________________________________
 .header__decorations {
   display: block;
   position: absolute;
-  color: var(--main-accent-color);
+  color: var(--main-decor-color);
   text-transform: uppercase;
   font-size: 18px;
   line-height: 23.4px;
@@ -36,11 +36,11 @@ ________________________________________________________________________________
   position: absolute;
   right: -19px;
   top: 7px;
-  background-color: var(--main-accent-color);
+  background-color: var(--main-decor-color);
   block-size: 9px;
   aspect-ratio: 1;
   border-radius: 50%;
-  box-shadow: 0px 0px 4px 2px var(--main-accent-color);
+  box-shadow: 0px 0px 4px 2px var(--main-decor-color);
 }
 
 .decorated-zone::before {
@@ -50,8 +50,8 @@ ________________________________________________________________________________
   block-size: 25px;
   inline-size: 25px;
   bottom: var(--main-page-padding);
-  border-inline-start: 1px var(--header-decor-color) solid;
-  border-block-end: 1px var(--header-decor-color) solid;
+  border-inline-start: 1px var(--main-decor-color) solid;
+  border-block-end: 1px var(--main-decor-color) solid;
 }
 
 .decorated-zone::after {
@@ -61,8 +61,8 @@ ________________________________________________________________________________
   inline-size: 25px;
   top: var(--main-page-padding);
   right: var(--main-page-padding);
-  border-inline-end: 1px var(--header-decor-color) solid;
-  border-block-start: 1px var(--header-decor-color) solid;
+  border-inline-end: 1px var(--main-decor-color) solid;
+  border-block-start: 1px var(--main-decor-color) solid;
 }
 
 
@@ -102,7 +102,7 @@ ________________________________________________________________________________
   text-transform: lowercase;
   line-height: 18px;
   border: 1px transparent solid;
-  color: var(--main-button-color);
+  color: var(--header-menu-text-color);
   padding: 2px 13px 4px;
   display: flex;
   justify-content: center;
@@ -120,11 +120,11 @@ ________________________________________________________________________________
 */
 
 .header__theme-menu-button_active {
-  border: 1px var(--main-button-color) solid;
+  border: 1px var(--menu-decor-color) solid;
 }
 
 .header__theme-menu-button:hover {
-  border: 1px var(--hover-border-color) solid;
+  border: 1px var(--menu-hover-color) solid;
 }
 
 .header__theme-menu-button:focus {
@@ -132,7 +132,7 @@ ________________________________________________________________________________
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px var(--main-button-color) solid;
+  border-bottom: 1px var(--menu-decor-color) solid;
 }
 
 /*
@@ -148,8 +148,8 @@ ________________________________________________________________________________
 .title {
   font-size: var(--main-title-font-size);
   line-height: var(--main-title-line-height );
-  color: var(--main-title-color);
-  text-shadow: 4px 4px 0 var(--main-accent-color);
+  color: var(--header-title-font-color);
+  text-shadow: 4px 4px 0 var(--header-title-text-shadow);
 }
 
 .header__text-container {
@@ -157,11 +157,11 @@ ________________________________________________________________________________
 }
 
 .header__text{
-  --main-font-color: #000028;
+  /* --main-font-color: #000028; */
 
   font-weight: bold;
-  background-color: var(--main-decor-color);
-  color: var(--main-font-color)
+  background-color: var(--head-text-bg-color);
+  color: var(--header-text-color);
 }
 
 /*
@@ -193,7 +193,7 @@ ________________________________________________________________________________
   margin-block-end: 20px;
   font-size: var(--main-font-size);
   line-height: var(--main-line-height);
-  color: var(--section-title-color);
+  color: var(--section-head-font-color);
 }
 
 .main__section:not(:last-child) {
@@ -205,17 +205,15 @@ ________________________________________________________________________________
 }
 
 .main__section-subhead {
-  --main-font-color: #000028;
-  
   margin-block-end: 10px;
   font-size: var(--main-font-size);
   line-height: var(--main-line-height);
-  background-color: var(--section-subhead-bg-color);
-  color: var(--main-font-color);
+  background-color: var(--subhead-bg-color);
+  color: var(--main-subhead-font-color);
 }
 
 .main__section-text-link {
-  text-shadow: 2px 1.5px 0 var(--main-accent-color);
+  text-shadow: 2px 1.5px 0 var(--link-text-shadow);
   text-decoration: none;
 }
 
@@ -230,7 +228,7 @@ ________________________________________________________________________________
 */
 
 .main__section-text-link:hover {
-  border-bottom: 1px var(--main-hover-color) solid;
+  border-bottom: 1px var(--link-color) solid;
 }
 
 .main__section-text-link:focus {
@@ -238,8 +236,18 @@ ________________________________________________________________________________
 }
 
 .main__section-text-link:focus-visible {
-  outline: 1px var(--main-hover-color) solid;
+  outline: 1px var(--link-color) solid;
 }
+
+/*
+
+________________________________________________________________________________
+
+
+состояния ссылок
+
+________________________________________________________________________________
+*/
 
 .main__section-text:not(:last-child) {
   margin-block-end: 10px;
@@ -254,13 +262,13 @@ ________________________________________________________________________________
 }
 
 .main__section-sub-subhead {
-  --main-font-color: #000028;
+  /* --main-font-color: #000028; */
 
   margin-block-end: 20px;
   font-size: var(--main-font-size);
   line-height: var(--main-line-height);
-  background-color: var(--sub-subhead-bg-color);
-  color: var(--main-font-color);
+  background-color: var(--subhead-bg-color);
+  color: var(--main-subhead-font-color);
 }
 
 /*
@@ -273,11 +281,11 @@ ________________________________________________________________________________
 */
 
 .main__section-in-pictures-subhead {
-  --main-font-color: #000028;
+  /* --main-font-color: #000028; */
 
   font-size: var(--main-font-size);
-  background-color: var(--main-decor-color);
-  color: var(--main-font-color);
+  background-color: var(--subhead-bg-color);
+  color: var(--main-subhead-font-color);
 }
 
 .main__section-images-container {
@@ -349,6 +357,7 @@ ________________________________________________________________________________
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
     gap: 20px;
+    padding-block-start: 10px;
   }
 
   .main__section-image:nth-child(1) {
@@ -399,7 +408,7 @@ ________________________________________________________________________________
     gap: 20px;
   }
 
-  .main__section-images-container {
+  /* .main__section-images-container {
     margin-block-start: 20px;
-  }
+  } */
 }

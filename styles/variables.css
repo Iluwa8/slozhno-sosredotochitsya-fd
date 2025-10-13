@@ -13,19 +13,23 @@
   --main-font-size: 1.125rem;
   --main-line-height: 23.4px;
   --main-font-family: "IBM Plex mono";
-  --section-title-color: rgb(255 0 112);
-  --main-accent-color: rgb(255 0 112);
-  --hover-border-color: rgb(255 0 112 / 0.4);
-  --main-title-color: #db00ff;
-  --main-font-color: #f1b2ce;
-  --main-decor-color: rgb(255 0 112);
-  --main-button-color: rgb(255 0 112);
   --main-bg-color: #000028;
-  --section-title-bg-color: rgb(255 0 112);
-  --section-subhead-bg-color: rgb(255 0 112);
-  --sub-subhead-bg-color: rgb(255 0 112);
-  --main-hover-color: rgba(241, 178, 206, 1);
-  --header-decor-color: rgb(253 17 101);
+  --main-subhead-font-color: #000028;
+  --subhead-bg-color: #FF0070;
+  --header-text-color: rgba(0, 0, 40, 1);
+  --section-head-font-color: #FF0070;
+  --main-decor-color: #FF0070;
+  --main-font-color: #F1B2CE;
+  --link-text-shadow: #FF0070;
+  --link-color: #F1B2CE;
+  --header-text-bg-color: #FF0070;
+  --header-title-font-color: #DB00FF;
+  --header-title-text-shadow: #FF0070;
+  --header-menu-border-color: rgba(255, 0, 112, 1);
+  --header-menu-text-color: #FF0070;
+  --menu-decor-color: #FF0070;
+  --link-decor-color: #F1B2CE;
+  --head-text-bg-color: #FF0070;
 }
 
 @media (min-width: 768px) {
