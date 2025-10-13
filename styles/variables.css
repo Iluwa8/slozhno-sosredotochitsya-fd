@@ -30,6 +30,7 @@
   --menu-decor-color: #FF0070;
   --link-decor-color: #F1B2CE;
   --head-text-bg-color: #FF0070;
+  --footer-text-shadow: #FF0070;
 }
 
 @media (min-width: 768px) {

@@ -81,6 +81,7 @@ ________________________________________________________________________________
   position: relative;
   min-block-size: min-content;
   block-size: 100vh;
+  min-height: 668px;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
 }
@@ -316,12 +317,24 @@ ________________________________________________________________________________
   display: grid;
   grid-template-columns: 1fr;
   block-size: 100vh;
+  min-height: 668px;
   align-items: center;
   padding: var(--main-page-padding);
   text-align: center;
 }
 
+  .footer__title {
+    text-shadow: 2px 2px 0 var(--footer-text-shadow);
+  }
 
+/*
+________________________________________________________________________________
+
+
+Медиа запросы
+
+________________________________________________________________________________
+*/
 
 
 @media (min-width: 768px) {
