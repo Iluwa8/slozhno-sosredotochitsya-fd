@@ -412,7 +412,8 @@ ________________________________________________________________________________
   }
 
   .main__section-head {
-    min-width: 315px;
+    max-width: 315px;
+    width: 100%;
   }
 
   .main__section:nth-child(even) .main__section-article-list {
@@ -421,7 +422,16 @@ ________________________________________________________________________________
     gap: 20px;
   }
 
+  /* .main__section:nth-child(odd) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  } */
+
   /* .main__section-images-container {
     margin-block-start: 20px;
   } */
+
+  .main__section:nth-child(odd) {
+    grid-template-columns: 1fr 2.06fr;
+    text-wrap: wrap;
+  }
 }

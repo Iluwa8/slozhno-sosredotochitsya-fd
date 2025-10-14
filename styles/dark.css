@@ -24,6 +24,7 @@
   --link-decor-color: #F1B2CE;
   --head-text-bg-color: #FF0070;
   --footer-text-shadow: #FF0070;
+  --menu-hover-color: rgba(255, 0, 112, 0.4);
 }
 
 .theme-dark .header__decorations {
